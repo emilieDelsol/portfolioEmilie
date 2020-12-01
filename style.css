@@ -1,0 +1,44 @@
+
+.myHeader{
+ 
+    background-color: black;
+    color: white;
+
+}
+.navbar{
+    background-color: black;
+}
+#plus{
+    width: 15vw;
+    margin: auto;
+}
+.titleWhite{
+    border-bottom: solid white;
+}
+.titleBlack{
+    border-bottom: solid 1px black;
+}
+.title{
+    width: 80%;
+    margin: auto;
+    padding: 1vh;
+    font-size: 3rem;
+}
+.sub-title{
+    font-size: 1.3rem;
+}
+.textSize{
+    font-size: 1rem;
+}
+#about{
+    background-color:black;
+    color: white;
+}
+.photoCV{
+    width: 30%;
+    border-radius: 50%;
+}
+.myFooter{
+    background-color: black;
+    color: white;
+}
