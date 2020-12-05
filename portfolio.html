@@ -5,127 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Emilie Delsol</title>
+    <title>Emilie Delsol portfolio</title>
   </head>
 
-  <body>
+  <body class="darkThemeBody">
     <div class="completePage">
     <header class="bannerImg darkBGimg d-flex flex-column pb-5">
         
-    <nav class=" darkBGimg navbar navbar-expand-lg navbar-dark  fixed-top">
-        <a class="navbar-brand text-warning" href="#">Bienvenu sur mon portfolio!</a>
-        <button type = "button" onclick = "darkFunction ()" ><i class="fas fa-toggle-on toggleButton " id="toggleOn" ></i><i class="fas fa-toggle-off toggleButton d-none" id="toggleOff"></i></button>
+        <nav class=" darkBGimg navbarTextSize navbar navbar-expand-lg navbar-dark  fixed-top">
+            <a class=" navbar-brand text-warning" href="#">Bienvenu!</a>
+            <button class="d-flex d-lg-none" type = "button" onclick = "whiteFunction ()" ><i class="fas fa-toggle-on toggleButton " id="toggleOn" ></i><i class="fas fa-toggle-off toggleButton d-none" id="toggleOff"></i></button>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbarTextSize navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">A propos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hardSoftSkills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="d-none d-lg-flex" type = "button" onclick = "whiteFunction ()" ><i class="fas fa-toggle-on toggleButton " id="toggleOn2" ></i><i class="fas fa-toggle-off toggleButton d-none" id="toggleOff2"></i></button>            
+        </nav>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1 class="sub-title text-center mb-1">Emilie Delsol</h1>
+        <h2 class="title titleDarkTheme text-center pb-3" >DEVELOPPEUR WEB JUNIOR 
+            <br/>- FULLSTACK -</h2>
+
         
-        <div class="colorWhiteTheme collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">A propos </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#hardSoftSkills">Compétences</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#hardSoftSkills">Contact</a>
-            </li>
-            </ul>
-           
-
-
-        </div>
-    </nav>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-         
-        
-
-        <h1 class="title titleWhite text-center" >DEVELOPPEUR WEB JUNIOR - FULLSTACK</h1>
-
-        <h2 class="sub-title text-center pt-5">Recherche de stage pour février 2020.</h2>
-        <a class=" btn btn-outline-warning btn-s" id="plus" href="#portfolio" role="button">En savoir plus...</a>
+        <br/>
+        <a class="textSize btn btn-outline-warning btn-s" id="plus" href="#portfolio" role="button">En savoir plus...</a>
     </header>
 
     <main class="">
     
         <section class="portfolio container-fluid pb-5 pt-5" id="portfolio">
-            
 
-            <h1 class="title titleBlack text-center mb-5">PORTFOLIO</h1>
+            <h2 class="title text-center mb-5">PORTFOLIO</h2>
             
-            <div class=" border border-dark mt-3 mb-5">
-                <h1 class="text-center">Projets personnels</h1>
-                <div class="card-deck m-3">
-                    <div class="card ml-auto mr-auto m-lg-3" >
-                        <img src="./images/milhieCreation.png" class="card-img-top" alt="site milhie creation">
-                        <div class="card-body">
-                            <h5 class="card-title">Milhie création</h5>
-                            <p class="card-text">Ceci est mon premier projet personnel. <br/>Le but de ce site a d'abord été de m'exercer en HTML CSS et JavaScript
-                            <br/>Je fait évoluer ce site au fil de mes apprentissages, une partie du site est maintenant en reactJS.</p>
-                            <a href="www.milhiecreation.com" class="btn btn-primary">Visiter le site</a>
-                        </div>
-                    </div>
-                    <div class="card ml-auto mr-auto m-lg-3" >
-                        <img src="./images/milhieCreation.png" class="card-img-top" alt="site milhie creation">
-                        <div class="card-body">
-                            <h5 class="card-title">Milhie création</h5>
-                            <p class="card-text">Ceci est mon premier projet personnel. <br/>Le but de ce site a d'abord été de m'exercer en HTML CSS et JavaScript
-                            <br/>Je fait évoluer ce site au fil de mes apprentissages, une partie du site est maintenant en reactJS.</p>
-                            <a href="www.milhiecreation.com" class="btn btn-primary">Visiter le site</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+            
             <div class=" border border-dark mt-3">
-                <h1 class="text-center">Projets en équipe</h1>
                 <div class="card-deck m-3 ">
                     <div class="card ml-auto mr-auto m-lg-3" >
-                        <img src="./images/enCours.jfif" class="card-img-top" alt="site milhie creation">
+                        <img src="./images/beOn.jpg" class="card-img-top" alt="site milhie creation">
                         <div class="card-body">
-                            <h5 class="card-title">IOT web platform BeON: projet client</h5>
+                            <h5 class="card-title">IOT web platform BeON</h5>
                             <p class="card-text">C# , projet en cours  - Depuis nov. 2020</p>
                             <p class="card-text">
-                                Création d'une interface graphique qui ache la géolocalisation, les alertes de
-                                balises en temps réel
-                                Connexion d'un ORM EfCore à une BDD existante postGre
+                                Développement d'une plateforme de suivi de balises géolocalisées en temps réel
                                 </p>
-                            <a href="www.milhiecreation.com" class="btn btn-primary">Visiter le site</a>
-                        </div>
-                    </div>
-                    <div class="card ml-auto mr-auto m-lg-3" >
-                        <img src="./images/ranceInfo.png" class="card-img-top" alt="projet1 rance info">
-                        <div class="card-body">
-                            <h5 class="card-title">"Rance Info"</h5>
-                            <p class="card-text"> HTML - CSS - JavaScript,  - sept. 2020 / oct. 2020</p>
-                            <p class="card-text">
-                                Création d'un site statique en HTML CSS et JavaScript - découverte du travail en
-                                équipe et des outils de collaboration
-                                </p>
-                            <a href="https://emiliedelsol.github.io/WCS-Projet1-RanceInfo/" class="btn btn-primary">Visiter le site</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-deck m-3">
-                    <div class="card ml-auto mr-auto m-lg-3" >
-                        <img src="./images/myAgenda.png" class="card-img-top" alt="projet my agenda">
-                        <div class="card-body">
-                            <h5 class="card-title">My agenda</h5>
-                            <p class="card-text">C# ASP.NetCore SQLServer SCRUM ReactJS,  - oct. 2020 / nov. 2020</p>
-                            <p class="card-text">
-                                Création d'une API REST et d'une BDD pour la gestion d'un agenda -
-                                Mise en place d'un front pour la démonstration des fonctionnalités -
-                                Mise en place des méthodologies Scrum
-                                </p>
-                            <a href="https://github.com/emilieDelsol/WCS-Projet2-MyAgenda.git" class="btn btn-primary">Lien github</a>
+                            <a href="www.milhiecreation.com" class="btn btn-dark btn-outline-warning">Visiter le site</a>
                         </div>
                     </div>
                     <div class="card ml-auto mr-auto m-lg-3" >
@@ -136,7 +81,58 @@
                                 <p class="card-text ">
                                 Création d'une application web front et back end en 24h - API REST .netCore et sa
                                 base de données hébergées en ligne - Collaboration avec une équipe Front End</p>
-                            <a href="https://github.com/emilieDelsol/WCS-Hackathon-BackToTheFuture-FYT.git" class="btn btn-primary">Lien github</a>
+                            <a href="https://github.com/emilieDelsol/WCS-Hackathon-BackToTheFuture-FYT.git" class="btn btn-dark btn-outline-warning">Lien github</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card-deck m-3">
+                    <div class="card ml-auto mr-auto m-lg-3" >
+                        <img src="./images/myAgenda.png" class="card-img-top" alt="projet my agenda">
+                        <div class="card-body">
+                            <h5 class="card-title">My agenda</h5>
+                            <p class="card-text">C# ASP.NetCore SQLServer SCRUM ReactJS,  - oct. 2020 / nov. 2020</p>
+                            <p class="card-text">
+                                Création d'une application de gestion de rendez-vous.
+
+                                </p>
+                            <a href="https://github.com/emilieDelsol/WCS-Projet2-MyAgenda.git" class="btn btn-dark btn-outline-warning">Lien github</a>
+                        </div>
+                    </div>
+                    <div class="card ml-auto mr-auto m-lg-3" >
+                        <img src="./images/ranceInfo.png" class="card-img-top" alt="projet1 rance info">
+                        <div class="card-body">
+                            <h5 class="card-title">"Rance Info"</h5>
+                            <p class="card-text"> HTML - CSS - JavaScript,  - sept. 2020 / oct. 2020</p>
+                            <p class="card-text">
+                                Création d'un site statique HTML/CSS/JS de présentation d'informations satiriques
+
+                                </p>
+                            <a href="https://emiliedelsol.github.io/WCS-Projet1-RanceInfo/" class="btn btn-dark btn-outline-warning">Visiter le site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" border border-dark mt-3 mb-5">
+                <h2 class="text-center">Projets personnels</h2>
+                <div class="card-deck m-3">
+                    <div class="card ml-auto mr-auto m-lg-3" >
+                        <img src="./images/milhieCreation.png" class="card-img-top" alt="site milhie creation">
+                        <div class="card-body">
+                            <h5 class="card-title">Milhie création</h5>
+                            <p class="card-text">Ceci est mon premier projet personnel. <br/>Le but de ce site a d'abord été de m'exercer en HTML CSS et JavaScript
+                            <br/>Je fait évoluer ce site au fil de mes apprentissages, une partie du site est maintenant en reactJS.</p>
+                            <a href="www.milhiecreation.com" class="btn btn-dark btn-outline-warning">Visiter le site</a>
+                        </div>
+                    </div>
+                    <div class="card ml-auto mr-auto m-lg-3" >
+                        <img src="./images/portfolio.png" class="card-img-top" alt="site milhie creation">
+                        <div class="card-body">
+                            <h5 class="card-title">Mon Portfolio</h5>
+                            <p class="card-text">Voici mon portfolio créé en HTML/CSS/JS. </p>
+                            <a href="www.milhie.fr/portfolio" class="btn btn-dark btn-outline-warning">Visiter le site</a>
                         </div>
                     </div>
                 </div>
@@ -145,84 +141,65 @@
         </section>
 
         <section id="about" class="bannerImg darkBGimg container-fluid pb-5 pt-5 d-flex flex-column">
-            <h1 class="title titleWhite text-center mb-5">A PROPOS</h1>
+            <h2 class="title text-center mb-5">A PROPOS</h2>
             <img src="./images/photoCV.jpg" alt="photo cv" class="photoCV m-auto">
-            <p class="pt-5 textSize">Passionnée par les technologies web et mobile, c'est en autodidacte que j'ai
-                commencé à prendre goût au métier de développeur en créant mon premier
-                site web.
-                En suivant la formation développeur web et mobile à la WildCodeSchool j'ai
-                découvert des méthodes de travail en équipe (notamment scrum) ainsi que
-                les principes de programmation "craftman" que je souhaites m'e
-                orcer de
-                mettre en place au quotidien dans ma future vie professionnelle.</p>
+            <p class="pt-5 textSize w-70 m-auto text-center textAbout">Passionnée par la technologie, 
+                j'ai décidé d'exercer un métier de développeur. 
+                Constamment en apprentissage, je développe mes compétences pour un jour devenir 
+                <span>artisan logiciel.</span>
+                </p>
         </section>
 
-        <section id="hardSoftSkills" class="pb-5 pt-5 whiteTheme">
-            <h1 class="title titleBlack text-center"><i class="fas fa-code"></i>
+        <section id="hardSoftSkills" class="textSize container-fluid pb-5 pt-5 d-flex flex-column">
+            <h2 class="title text-center mb-5"><i class="fas fa-code"></i>
 
-                COMPETENCES</h1>
-            <div>
-                <i class="fab fa-html5">HTML</i> 
-                <i class="fab fa-css3-alt">CSS</i> 
-                <i class="fab fa-js-square">Javascript</i> 
-                <i class="fas fa-database">SqlServer</i>  
-                <i class="fab fa-github">GitHub</i>
-                <i class="fab fa-gitlab">GitLab</i>
-                <p>Gestion de projet</p>
+                COMPETENCES</h2>
+           
+            <div class="d-flex justify-content-between flex-wrap w-90 m-auto mt-5 mb-5">
+                <i class="fab fa-html5 p-3"> HTML</i> 
+                <i class="fab fa-css3-alt p-3"> CSS</i> 
+                <i class="fab fa-js-square p-3"> Javascript</i> 
+                <i class="fas fa-database p-3"> SqlServer</i>  
+                <i class="fab fa-github p-3"> GitHub</i>
+                <i class="fab fa-gitlab p-3"> GitLab</i>
+                <i class="fas fa-code p-3"> C# ASP.Net</i>
 
-
-                Capacité d'adaptation
-                Autonomie
-                Rigueur
-                Gestion du stress / Sang froid
-                Travail d'équipe et communication
-                Empathie, écoute active, conseil, entre-aide
-                Autodidacte
-                
-
-
+                <i class="p-3"> Gestion de projet</i>
             </div>
+            <ul class="w-70 m-auto text-center mt-5 mb-5 p-0">
+                <li>Capacité d'adaptation</li>
+                <li>Autonomie</li>
+                <li>Rigueur</li>
+                <li>Gestion du stress / Sang froid</li>
+                <li>Travail d'équipe et communication</li>
+                <li>Empathie, écoute active, conseil, entre-aide</li>
+                <li>Autodidacte</li>
+            </ul>
+            
 
         </section>
       
          
     </main>
-    <footer class="colorWhiteTheme bannerImg darkBGimg myFooter pb-5 pt-5">
-        <ul class="list-group ">
+    <footer class=" bannerImg darkBGimg myFooter pb-5 pt-5" id="contact">
+        <div class="mt-5 mb-5 d-flex flex-row justify-content-around ">
 
-            <li class="text-center "><a href="https://www.linkedin.com/in/emilie-delsol-49b574197/" title="linkedin" > <i class="colorWhiteTheme fab fa-linkedin text-light"></i></a></li>
-            <li class="text-center"><a href="https://github.com/emilieDelsol" title="gitHub"><i class="colorWhiteTheme fab fa-github  text-light"></i></a></li>
-            <li class="text-center"><a href="http.milhiecreation.com" title="milhie creation"><i class="colorWhiteTheme fas fa-globe text-light"></i></a></li>
-
+            <a class="textFooterSize" href="https://www.linkedin.com/in/emilie-delsol-49b574197/" target="blank" title="linkedin" > <i class="colorWhiteTheme fab fa-linkedin text-light"></i></a>
+            <a class="textFooterSize" href="https://github.com/emilieDelsol" target="blank" title="gitHub"><i class="colorWhiteTheme fab fa-github  text-light"></i></a>
+            <a class="textFooterSize" href="http.milhiecreation.com" target="blank" title="milhie creation"><i class="colorWhiteTheme fas fa-globe text-light"></i></a>
+            <a class="textFooterSize" href="mailto:emiliedelsol1@gmail.com" title="mail"><i class="colorWhiteTheme fas fa-at text-light"></i></a>
             
 
 
-        </ul>
+        </div>
         
      
     </footer>
     </div>
-</body>
-<script>
-    function darkFunction () {
-    //change Bg yellow by background image code
-    var allYellowBg=document.querySelectorAll(".bannerImg");
-    for (i=0 ; i<allYellowBg.length;i++){ 
-        allYellowBg[i].classList.toggle("whiteBGimg");
-        allYellowBg[i].classList.toggle("darkBGimg");
-    }
-    var colorWhiteTheme=document.querySelectorAll(".colorWhiteTheme");
-    for (i=0 ; i<colorWhiteTheme.length;i++){
-        colorWhiteTheme[i].classList.toggle("text-light");
-    }
-    document.getElementById("plus").classList.toggle("btn-dark")
-    //Change body background
-    document.querySelector("body").classList.toggle("whiteThemeBody"); 
-    document.getElementById("toggleOn").classList.toggle("d-none");
-    document.getElementById("toggleOff").classList.toggle("d-none");
-}
-</script>
+<script src="./scriptPortfolio.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/65454f298e.js" crossorigin="anonymous"></script>
+</body>
 </html>
