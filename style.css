@@ -2,6 +2,9 @@ body, .navbar{
     width: 1024px;
     margin: auto;
 }
+.emilieDelsol{
+    margin-top: 4em;
+}
 @media screen and (max-width: 740px)
 {
     body, .navbar{
