@@ -2,7 +2,10 @@ body, .navbar{
     width: 1024px;
     margin: auto;
 }
-@media screen and (max-width: 740px)
+.emilieDelsol{
+    margin-top: 5em;
+}
+@media screen and (max-width: 1024px)
 {
     body, .navbar{
         width: auto;
