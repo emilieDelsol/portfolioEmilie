@@ -21,4 +21,13 @@ function whiteFunction () {
     document.getElementById("toggleOff").classList.toggle("d-none");
     document.getElementById("toggleOn2").classList.toggle("d-none");
     document.getElementById("toggleOff2").classList.toggle("d-none");
+    
+   
+    var x = element.getElementById("imgCardPortfolio");
+    var v = x.getAttribute("src");
+    if(v == "./images/portfolioWhite.png")
+       { v ="./images/portfolio.png";}
+    else
+        {v = "./images/portfolioWhite.png";}
+    x.setAttribute("src", v);	
 }
