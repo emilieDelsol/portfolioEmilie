@@ -1,15 +1,18 @@
 
-.myHeader{
- 
-    background-color: black;
+.darkBGimg
+{
+    background-image: url("./images/wallMatrix.jfif");    
     color: white;
-
 }
-.navbar{
-    background-color: black;
+.whiteBGimg
+{
+    background-image: url("./images/photo-wood.jfif");
+}
+.colorWhiteTheme{
+    color: black;
 }
 #plus{
-    width: 15vw;
+    width: 25vw;
     margin: auto;
 }
 .titleWhite{
@@ -30,15 +33,38 @@
 .textSize{
     font-size: 1rem;
 }
-#about{
-    background-color:black;
-    color: white;
-}
+
 .photoCV{
-    width: 30%;
+    width: 30vw;
     border-radius: 50%;
 }
-.myFooter{
-    background-color: black;
+@media screen and (min-width: 740px)
+{
+    .photoCV{
+        width: 20vw;
+    }
+}
+
+
+
+.portfolio{
+    background-color: #000000;
+    background-image: linear-gradient(250deg, #2D3436 0%, #000000 26%, #2D3436 70%);
     color: white;
+}
+#hardSoftSkills{
+    background-color: #000000;
+    background-image: linear-gradient(250deg, #2D3436 0%, #000000 26%, #2D3436 70%);
+    color: white;
+}
+.card{
+    color: black;
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+}
+
+.whiteTheme{
+    background-color: #000000;
+    background-image: linear-gradient(315deg ,#ffffff 0%, grey 26%, #ffffff 100%);
+        color: black;
 }

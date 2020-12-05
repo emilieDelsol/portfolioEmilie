@@ -9,14 +9,18 @@
   </head>
 
   <body>
-    <header class="myHeader d-flex flex-column pb-5">
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+    <div class="completePage">
+    <header class="bannerImg darkBGimg d-flex flex-column pb-5">
+        
+    <nav class=" darkBGimg navbar navbar-expand-lg navbar-dark  fixed-top">
         <a class="navbar-brand text-warning" href="#">Bienvenu sur mon portfolio!</a>
+        <button type = "button" onclick = "darkFunction ()" ><i class="fas fa-toggle-on toggleButton " id="toggleOn" ></i><i class="fas fa-toggle-off toggleButton d-none" id="toggleOff"></i></button>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="colorWhiteTheme collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
                 <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
@@ -31,23 +35,29 @@
                 <a class="nav-link" href="#hardSoftSkills">Contact</a>
             </li>
             </ul>
-            
+           
+
+
         </div>
     </nav>
     <br/>
     <br/>
     <br/>
     <br/>
-      
+         
+        
+
         <h1 class="title titleWhite text-center" >DEVELOPPEUR WEB JUNIOR - FULLSTACK</h1>
 
         <h2 class="sub-title text-center pt-5">Recherche de stage pour février 2020.</h2>
-        <a class="btn btn-outline-warning btn-s" id="plus" href="#portfolio" role="button">En savoir plus...</a>
+        <a class=" btn btn-outline-warning btn-s" id="plus" href="#portfolio" role="button">En savoir plus...</a>
     </header>
 
     <main class="">
+    
         <section class="portfolio container-fluid pb-5 pt-5" id="portfolio">
             
+
             <h1 class="title titleBlack text-center mb-5">PORTFOLIO</h1>
             
             <div class=" border border-dark mt-3 mb-5">
@@ -134,7 +144,7 @@
             
         </section>
 
-        <section id="about" class="container-fluid pb-5 pt-5 d-flex flex-column">
+        <section id="about" class="bannerImg darkBGimg container-fluid pb-5 pt-5 d-flex flex-column">
             <h1 class="title titleWhite text-center mb-5">A PROPOS</h1>
             <img src="./images/photoCV.jpg" alt="photo cv" class="photoCV m-auto">
             <p class="pt-5 textSize">Passionnée par les technologies web et mobile, c'est en autodidacte que j'ai
@@ -147,7 +157,7 @@
                 mettre en place au quotidien dans ma future vie professionnelle.</p>
         </section>
 
-        <section id="hardSoftSkills" class="pb-5 pt-5">
+        <section id="hardSoftSkills" class="pb-5 pt-5 whiteTheme">
             <h1 class="title titleBlack text-center"><i class="fas fa-code"></i>
 
                 COMPETENCES</h1>
@@ -158,7 +168,7 @@
                 <i class="fas fa-database">SqlServer</i>  
                 <i class="fab fa-github">GitHub</i>
                 <i class="fab fa-gitlab">GitLab</i>
-                <p>Scrum</p>
+                <p>Gestion de projet</p>
 
 
                 Capacité d'adaptation
@@ -177,12 +187,12 @@
       
          
     </main>
-    <footer class="myFooter pb-5 pt-5">
+    <footer class="colorWhiteTheme bannerImg darkBGimg myFooter pb-5 pt-5">
         <ul class="list-group ">
 
-            <li class="text-center "><a href="https://www.linkedin.com/in/emilie-delsol-49b574197/" title="linkedin" > <i class="fab fa-linkedin text-light"></i></a></li>
-            <li class="text-center"><a href="https://github.com/emilieDelsol" title="gitHub"><i class="fab fa-github  text-light"></i></a></li>
-            <li class="text-center"><a href="http.milhiecreation.com" title="milhie creation"><i class="fas fa-globe text-light"></i></a></li>
+            <li class="text-center "><a href="https://www.linkedin.com/in/emilie-delsol-49b574197/" title="linkedin" > <i class="colorWhiteTheme fab fa-linkedin text-light"></i></a></li>
+            <li class="text-center"><a href="https://github.com/emilieDelsol" title="gitHub"><i class="colorWhiteTheme fab fa-github  text-light"></i></a></li>
+            <li class="text-center"><a href="http.milhiecreation.com" title="milhie creation"><i class="colorWhiteTheme fas fa-globe text-light"></i></a></li>
 
             
 
@@ -191,7 +201,27 @@
         
      
     </footer>
+    </div>
 </body>
+<script>
+    function darkFunction () {
+    //change Bg yellow by background image code
+    var allYellowBg=document.querySelectorAll(".bannerImg");
+    for (i=0 ; i<allYellowBg.length;i++){ 
+        allYellowBg[i].classList.toggle("whiteBGimg");
+        allYellowBg[i].classList.toggle("darkBGimg");
+    }
+    var colorWhiteTheme=document.querySelectorAll(".colorWhiteTheme");
+    for (i=0 ; i<colorWhiteTheme.length;i++){
+        colorWhiteTheme[i].classList.toggle("text-light");
+    }
+    document.getElementById("plus").classList.toggle("btn-dark")
+    //Change body background
+    document.querySelector("body").classList.toggle("whiteThemeBody"); 
+    document.getElementById("toggleOn").classList.toggle("d-none");
+    document.getElementById("toggleOff").classList.toggle("d-none");
+}
+</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/65454f298e.js" crossorigin="anonymous"></script>
